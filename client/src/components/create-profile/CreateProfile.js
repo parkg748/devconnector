@@ -115,7 +115,7 @@ class CreateProfile extends React.Component {
                 <TextareaFieldGroup error={errors.bio} onChange={this.onChange} placeholder="A short bio of yourself" name="bio" info='Tell us a little about yourself'/>
 
                 <div className="mb-3">
-                  <button onClick={() => {
+                  <button type='button' onClick={() => {
                     this.setState(prevState => ({
                       displaySocialInputs: !prevState.displaySocialInputs
                     }))
