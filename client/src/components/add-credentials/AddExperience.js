@@ -25,6 +25,12 @@ class AddExperience extends React.Component {
     this.onCheck = this.onCheck.bind(this);
   }
 
+  componentWillReceiveProps(nextProps) {
+    if (nextProps.errors) {
+      this.setState({ errors: nextProps.errors });
+    }
+  }
+
   onCheck(e) {
     this.setState({ disabled: !this.state.disabled, current: !this.state.current });
   }
