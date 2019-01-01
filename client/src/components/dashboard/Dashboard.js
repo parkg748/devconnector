@@ -33,7 +33,7 @@ class Dashboard extends React.Component {
             <p className='lead text-muted'>Welcome <Link to={`/profile/${profile.handle}`}>{user.name}</Link></p>
             <ProfileActions />
             <Experience experience={profile.experience}/>
-            <Experience education={profile.education}/>
+            <Education education={profile.education}/>
             <div style={{ marginBottom: '60px' }} />
             <button onClick={this.onDeleteClick.bind(this)} className='btn btn-danger'>Delete My Account</button>
           </div>
